@@ -28,11 +28,11 @@ importers:
         specifier: '20'
         version: 20.17.57
       '@types/react':
-        specifier: '18'
-        version: 18.3.23
+        specifier: 18.2.42
+        version: 18.2.42
       '@types/react-dom':
         specifier: '18'
-        version: 18.3.7(@types/react@18.3.23)
+        version: 18.3.7(@types/react@18.2.42)
       autoprefixer:
         specifier: '10'
         version: 10.4.21(postcss@8.5.4)
@@ -288,8 +288,11 @@ packages:
     peerDependencies:
       '@types/react': ^18.0.0
 
-  '@types/react@18.3.23':
-    resolution: {integrity: sha512-/LDXMQh55EzZQ0uVAZmKKhfENivEvWz6E+EYzh+/MCjMhNsotd+ZHhBGIjFDTi6+fz0OhQQQLbTgdQIxxCsC0w==}
+  '@types/react@18.2.42':
+    resolution: {integrity: sha512-c1zEr96MjakLYus/wPnuWDo1/zErfdU9rNsIGmE+NV71nx88FG9Ttgo5dqorXTu/LImX2f63WBP986gJkMPNbA==}
+
+  '@types/scheduler@0.26.0':
+    resolution: {integrity: sha512-WFHp9YUJQ6CKshqoC37iOlHnQSmxNc795UhB26CyBBttrN9svdIrUjl/NjnNmfcwtncN0h/0PPAFWv9ovP8mLA==}
 
   '@typescript-eslint/parser@6.21.0':
     resolution: {integrity: sha512-tbsV1jPne5CkFQCgPBcDOt30ItF7aJoZL997JSF7MhGQqOeT3svWRYxiqlfA5RUdlHN6Fi+EI9bxqbdyAUZjYQ==}
@@ -2157,14 +2160,17 @@ snapshots:
 
   '@types/prop-types@15.7.14': {}
 
-  '@types/react-dom@18.3.7(@types/react@18.3.23)':
+  '@types/react-dom@18.3.7(@types/react@18.2.42)':
     dependencies:
-      '@types/react': 18.3.23
+      '@types/react': 18.2.42
 
-  '@types/react@18.3.23':
+  '@types/react@18.2.42':
     dependencies:
       '@types/prop-types': 15.7.14
+      '@types/scheduler': 0.26.0
       csstype: 3.1.3
+
+  '@types/scheduler@0.26.0': {}
 
   '@typescript-eslint/parser@6.21.0(eslint@8.57.1)(typescript@5.8.3)':
     dependencies:
